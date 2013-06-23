@@ -55,7 +55,7 @@ ifneq ($(filter generic%,$(TARGET_DEVICE)),)
 endif
 
 ifeq ($(TARGET_BOARD_PLATFORM), msm8960)
-	LOCAL_CFLAGS += -DUSE_FENCE_SYNC
+	LOCAL_CFLAGS += -DUSE_NATIVE_FENCE_SYNC
 endif
 
 include $(BUILD_SHARED_LIBRARY)
